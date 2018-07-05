@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Series de Fibonacci</title>
+    <script type="text/javascript">
+        
+
+        function fibonacci(numero)
+        {
+            var var1 = 0;
+            var var2 = 1;
+            var var3;
+            var var4;
+ 
+            document.write("-"+var1+"-"+var2+"-");
+            for (var4=0; var4<numero-2;var4++)
+            {
+                var3 = var1 + var2;
+                var1 = var2;
+                var2 = var3;
+                document.write(""+var3+"-");
+            }
+        }
+    </script>
+</head>
+ 
+<body>
+    <div>
+    <h1 style="text-align:center;">SERIE FIBONACCI</h1>
+    <script type="text/javascript">
+        var numero = prompt ("¿Cuantos numeros de la serie Fibonacci quieres ver?:  ");
+        fibonacci(""+numero);
+       // <h1>"SERIE FIBONACCI"</h1>
+    </script>
+    </div>
+</body>
+</html>
